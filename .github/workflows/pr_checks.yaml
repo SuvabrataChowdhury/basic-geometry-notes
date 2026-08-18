@@ -1,0 +1,24 @@
+name: Automated Checks for PR to be merged
+
+on:
+  # Runs on pushes targeting the default branch
+  pull_request:
+    branches: ["main"]
+    types: [opened, reopened, synchronize]
+
+jobs:
+  spell-check:
+    name: Lint Markdown Prose
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v7
+      - name: Check Spellings
+        uses: streetsidesoftware/cspell-action@v6
+        with:
+          # Target only your Markdown files
+          files: "**/*.md"
+          # Ensures it reads your custom config file
+          config: "cspell.config.yml"
