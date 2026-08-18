@@ -34,7 +34,8 @@ languageSettings:
 # Whitelist specific keywords or software terms you use often
 words:
   - mermaid
+  - mdbook
   - latex
   - katex
-  - frontmatter
-  - obsidian
+  - Suvabrata
+  - Chowdhury
