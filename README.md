@@ -1,6 +1,6 @@
 # Basic Geometry
 
-A structured reference book on fundamental gesdfometry, covering theorems, proofs, and key concepts from angles and lines through triangles, polygons, and circles.
+A structured reference book on fundamental geometry, covering theorems, proofs, and key concepts from angles and lines through triangles, polygons, and circles.
 
 ## Topics Covered
 
